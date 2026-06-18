@@ -24,8 +24,6 @@ services:
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://localhost:3000,http://localhost}
       API_HOST: 0.0.0.0
       API_PORT: 8000
-    ports:
-      - "${BACKEND_PORT:-8000}:8000"
     depends_on:
       db:
         condition: service_healthy
@@ -37,8 +35,6 @@ services:
       args:
         VITE_API_URL: ${VITE_API_URL:-http://localhost:8000/api}
     restart: unless-stopped
-    ports:
-      - "${FRONTEND_PORT:-80}:80"
     depends_on:
       - backend
 
