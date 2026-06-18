@@ -1,15 +1,14 @@
 # Deployment Guide
 
-## Submission Links
+## Live Deployment (Render)
 
-After completing deployment steps below, use these URLs for your assessment submission.
-
-| Item | How to Obtain |
-|------|---------------|
+| Item | URL |
+|------|-----|
 | GitHub Repository | https://github.com/adasarpan404/inventory-order-management |
-| Docker Hub Image | `docker.io/<username>/inventory-backend:latest` |
-| Frontend URL | Your Render/Vercel/Netlify static site URL |
-| Backend API URL | Your Render/Railway/Fly.io web service URL |
+| Frontend URL | https://inventory-frontend-w7ks.onrender.com |
+| Backend API URL | https://inventory-backend-l8z2.onrender.com |
+| API Docs | https://inventory-backend-l8z2.onrender.com/docs |
+| Docker Hub Image | `docker.io/adasarpan404/inventory-backend:latest` (push with `docker push`) |
 
 ## Option 1: Render (Recommended — Free Tier)
 
