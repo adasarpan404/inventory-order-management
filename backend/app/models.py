@@ -61,7 +61,7 @@ class Customer(Base):
         DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
     )
 
-    orders: Mapped[list["Order"]] = relationship(back_populates="customer")
+    orders: Mapped[list["Order"]] = relationship(back_populates="customer", cascade="all, delete-orphan")
 
 
 class Order(Base):
